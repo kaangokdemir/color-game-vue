@@ -1,0 +1,32 @@
+.row {
+  background: #f8f9fa;
+  margin-top: 20px;
+  border: solid 2px #6c757d;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.not-allowed {
+  cursor: not-allowed !important;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: gray;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5%;
+}
+
+.col {
+  background-color: #eaffd0;
+}
+
+.spn {
+  display: block;
+  font-size: 80px;
+  position: absolute;
+}

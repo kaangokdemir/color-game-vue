@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Color-game</title>
+  
+  
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+
+      <link rel="stylesheet" href="./style.css">
+
+  
+</head>
+
+<body>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+<div class="container" id="exercise">
+  <div class="row justify-content-around align-items-center">
+    <div id="box1" class="box" :style="myStyle.first">
+      <span class="spn">{{myStyle.first.value}}</span>
+    </div>
+    <div id="box2" class="box" :style="myStyle.second">
+      <span class="spn">{{myStyle.second.value}}</span>
+    </div>
+    <div id="box3" class="box" :style="myStyle.third">
+      <span class="spn">{{myStyle.third.value}}</span>
+    </div>
+  </div>
+  <div class="row justify-content-between align-items-center">
+
+
+    <div class="col" style="height: 250px; border: solid 2px #f38181">
+      <label for="bcolor1">Background Color:</label>
+
+      <input id="bcolor1" v-model="myStyle.first.backgroundColor" maxlength="10" type="text" class="form-control" placeholder="e.g. Blue, #FFF000">
+
+
+      <label for="number1">Number:</label>
+      <input id="number1" v-model="myStyle.first.value" maxlength="1" type="text" class="form-control" placeholder="e.g. 1,2,3,4,5">
+      <label for="color1">Text Color:</label>
+      <input id="color1" v-model="myStyle.first.color" maxlength="10" type="text" class="form-control" placeholder="e.g. Orange, #FFFF00">
+    </div>
+    <div class="col" style="height: 250px; border: solid 2px #f38181">
+      <label for="bcolor2">Background Color:</label>
+
+      <input id="bcolor2" v-model="myStyle.second.backgroundColor" maxlength="10" type="text" class="form-control" placeholder="e.g. Blue, #FFF000">
+
+
+      <label for="number2">Number:</label>
+      <input id="number2" v-model="myStyle.second.value" maxlength="1" type="text" class="form-control" placeholder="e.g. 1,2,3,4,5">
+      <label for="color2">Text Color:</label>
+      <input id="color2" v-model="myStyle.second.color" maxlength="10" type="text" class="form-control" placeholder="e.g. Orange, #FFFF00">
+    </div>
+    <div class="col" style="height: 250px; border: solid 2px #f38181">
+      <label for="bcolor3">Background Color:</label>
+
+      <input id="bcolor3" v-model="myStyle.third.backgroundColor" maxlength="10" type="text" class="form-control" placeholder="e.g. Blue, #FFF000">
+
+
+      <label for="number3">Number:</label>
+      <input id="number3" v-model="myStyle.third.value" maxlength="1" type="text" class="form-control" placeholder="e.g. 1,2,3,4,5">
+      <label for="color3">Text Color:</label>
+      <input id="color3" v-model="myStyle.third.color" maxlength="10" type="text" class="form-control" placeholder="e.g. Orange, #FFFF00">
+    </div>
+
+  </div>
+
+
+
+</div>
+
+<footer class="page-footer font-small teal pt-4">
+  <div class="footer-copyright text-center py-3">
+    Created by
+    <a href="http://kaangokdemir.me"> Kaan Gökdemir</a> for fun 😁
+  </div>
+</footer>
+  
+  
+
+    <script  src="./script.js"></script>
+
+
+
+
+</body>
+
+</html>
